@@ -13,7 +13,7 @@
                         <img class=" w-[200px] " src="../assets/playstore.png" alt="">
                     </a>
                 </div>
-                <ToastMine ref="playstore" message="Currently 404 VPN is not available on playstore.Direct Downloading...." />
+                <ToastMine ref="playstore" message="Currently 404 VPN is not available on playstore.Direct Downloading..." />
             </div>
         </div>
     </div>
