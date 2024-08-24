@@ -7,7 +7,7 @@
                         <h1 class=" font-bold text-6xl inline opacity-80 hero-title">Fast & Private Browsing</h1>
                         <img class=" w-16 inline mb-8 ml-2 wave"
                             src="https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="">
-                        <h1 class=" text-lg font-normal opacity-75 hero-content">Experience the power of 404 VPN, combining high-speed performance with top-tier privacy protection.. 📍
+                        <h1 class=" text-lg font-normal opacity-75 hero-content">Experience the power of 404 VPN, combining high-speed performance with top-tier privacy protection. 📍
                         </h1>
                         <div class="social flex gap-4 mt-7 social">
                             <a href="https://www.facebook.com/profile.php?id=100092328172044"><i
