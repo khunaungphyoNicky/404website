@@ -1,33 +1,39 @@
 <template>
     <div>
-        <div class="skills flex items-center gap-10 md:mt-20 mt-10">
-            <h1 class=" text-xl opacity-90 font-semibold md:text-start text-center tech-title">Tech Stack</h1>
-            <h1 class=" text-xl opacity-90 tech">|</h1>
-            <div class=" skills-box flex gap-10 items-center">
-                <div class="html flex gap-2 cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <i class="fa-brands fa-html5 text-5xl text-orange-600"></i>
-                    <i class="fa-brands fa-css3-alt text-5xl text-sky-600"></i>
+        <div class="skills flex items-center gap-10 md:mt-20 mt-10 mb-10">
+            <div class=" skills-box flex gap-3 items-center">
+                <div @click="download" class="html flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
+                    <a href="https://www.dropbox.com/scl/fi/oab3q5ho0fiwbhhd9uza2/404VPN_1.1.3.apk?rlkey=8hogeu2jzwp5ltwgt7ez3nbmb&st=h9kczpia&dl=1">
+                        <img class=" w-[200px] " src="../assets/apk-direct-download.png" alt="">
+                    </a>
                 </div>
-                <div class="php flex gap-2 cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <i class="fa-brands fa-square-js text-5xl text-yellow-400"></i>
-                    <i class="fa-brands fa-php text-5xl text-purple-600"></i>
+                <ToastMine ref="toast" message="Downloading..." />
+                <div @click="play" class="php flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
+                    <a href="https://www.dropbox.com/scl/fi/oab3q5ho0fiwbhhd9uza2/404VPN_1.1.3.apk?rlkey=8hogeu2jzwp5ltwgt7ez3nbmb&st=h9kczpia&dl=1">
+                        <img class=" w-[200px] " src="../assets/playstore.png" alt="">
+                    </a>
                 </div>
-                <div class="flex gap-2 cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <i class="fa-brands fa-vuejs text-5xl text-green-500"></i>
-                    <i class="fa-brands fa-laravel text-5xl text-red-500"></i>
-                </div>
-                <div class="flex gap-2 items-center cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <img class=" w-16" src="../assets/tailwindcss.png" alt="">
-                    <i class="fa-brands fa-bootstrap text-5xl text-violet-700"></i>
-                </div>
+                <ToastMine ref="playstore" message="Currently 404 VPN is not available on playstore.Direct Downloading..." />
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import ToastMine from '@/components/ToastMine.vue'
 export default {
-    name: 'SkillPage'
+    name: 'SkillPage',
+    components: {
+        ToastMine
+    },
+    methods: {
+    download() {
+      this.$refs.toast.showToast(); // Show toast on button click
+    },
+    play() {
+      this.$refs.playstore.showToast(); // Show toast on button click
+    }
+  }
 }
 </script>
 

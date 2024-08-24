@@ -211,6 +211,9 @@ html::-webkit-scrollbar-thumb{
         padding: 0;
         width: 90%;
     }
+    .skills{
+        margin-bottom: 190px;
+    }
 }
 
 @media screen and (max-width: 434px) {
@@ -227,5 +230,6 @@ html::-webkit-scrollbar-thumb{
     .hero-title {
         font-size: 2.5rem;
     }
+
 }
 

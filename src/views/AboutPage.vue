@@ -10,15 +10,9 @@
                 </div>
             </div>
             <div class="about-details w-[490px] min-h-[356px]">
-                <h1 class=" text-[#147EFB] font-bold text-lg">ABOUT ME</h1>
-                <h1 class=" font-bold text-[27px] mt-2 opacity-80">A dedicated Full Stack Developer
-                    based in Taunggyi, Myanmar 📍</h1>
-                <p class=" font-normal text-[17px] opacity-70 mt-4 about-content">As a Junior Full Stack Developer, I possess an impressive
-                    arsenal of skills in HTML, CSS, JavaScript,
-                    Vue, Laravel, and Tailwind. I excel in developing and maintaining responsive websites that offer a smooth
-                    user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and
-                    optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who
-                    thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+                <h1 class=" text-[#147EFB] font-bold text-lg">ABOUT</h1>
+                <h1 class=" font-bold text-[27px] mt-2 opacity-80">Reliable VPN Security 📍</h1>
+                <p class=" font-normal text-[17px] opacity-70 mt-4 about-content">As a versatile VPN, we offer both free and premium plans designed to meet your browsing needs. Our free plan provides essential features, including unlimited bandwidth and access to a selection of global servers, ensuring basic online security. The premium plan unlocks advanced options like high-speed servers, enhanced encryption, and 24/7 priority support, delivering a superior experience. Whether you opt for our free or premium service, you can trust our VPN to protect your privacy, keep your data secure, and provide a smooth, uninterrupted connection.</p>
             </div>
         </div>
     </div>
