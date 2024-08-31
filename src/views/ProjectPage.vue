@@ -1,5 +1,23 @@
 <template>
     <div>
+        <div class="py-[110px] flex items-center bg-white contact-page">
+        <div class="max-w-[950px] flex mx-auto w-full contact-main">
+            <div class="contact">
+                <div class="contact-title">
+                    <h1 class="text-[#147EFB] font-bold text-lg uppercase">Payment Method</h1>
+                    <h1 class=" font-bold text-2xl mt-2 opacity-80">Pay Easily with Thai Bank or KPay.</h1>
+                </div>
+                <div class="payment-info my-10 flex gap-3">
+                    <div class="location flex gap-6 items-center">
+                        <img class=" w-[260px] " src="../assets/bank.jpg" alt="">
+                    </div>
+                    <div class="location flex gap-6 items-center ">
+                        <img class=" w-[40px] " src="../assets/kpay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="sm:flex sm:flex-col sm:align-center p-10">
     <div class="relative self-center bg-slate-200 rounded-lg p-0.5 flex">
         <button type="button"
