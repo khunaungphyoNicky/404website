@@ -21,7 +21,7 @@
                     <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿0</span>
 
                     <span class="text-base font-medium text-slate-500">/mo</span>
-                </p><a href="https://t.me/official404vpn"
+                </p><a href="https://www.facebook.com/profile.php?id=100092328172044"
                     class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">Join
                     as a Starter</a>
             </div>
@@ -93,7 +93,7 @@
                     <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿80</span>
 
                     <span class="text-base font-medium text-slate-500">/mo</span>
-                </p><a href="https://t.me/official404vpn"
+                </p><a href="https://www.facebook.com/profile.php?id=100092328172044"
                     class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">Join
                     as a Superior</a>
             </div>
@@ -156,7 +156,7 @@
                     <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿100</span>
 
                     <span class="text-base font-medium text-slate-500">/mo</span>
-                </p><a href="https://t.me/official404vpn"
+                </p><a href="https://www.facebook.com/profile.php?id=100092328172044"
                     class="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center">Join
                     as a Shipper</a>
             </div>
