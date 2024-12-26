@@ -20,7 +20,7 @@
                                 class="fa-solid fa-envelope text-[#147EFB] text-3xl opacity-80"></i></div>
                         <div class="address">
                             <h1 class="font-bold text-lg opacity-80">Mail</h1>
-                            <p class="contact-box">fone3057@gmail.com</p>
+                            <p class="contact-box">htetnainglinn8800@gmail.com</p>
                         </div>
                     </div>
                 </div>
