@@ -5,15 +5,15 @@
             <div class="contact">
                 <div class="contact-title">
                     <h1 class="text-[#147EFB] font-bold text-lg uppercase">Payment Method</h1>
-                    <h1 class=" font-bold text-2xl mt-2 opacity-80">Pay Easily with Thai Bank or KPay.</h1>
+                    <h1 class=" font-bold text-2xl mt-2 opacity-80">Pay Easily with Thai Bank</h1>
                 </div>
                 <div class="payment-info my-10 flex gap-3">
                     <div class="location flex gap-6 items-center">
                         <img class=" w-[260px] " src="../assets/bank.jpg" alt="">
                     </div>
-                    <div class="location flex gap-6 items-center ">
+                    <!-- <div class="location flex gap-6 items-center ">
                         <img class=" w-[40px] " src="../assets/kpay.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -87,9 +87,9 @@
                 <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Superior</h2> -->
                 <!-- <p class="mt-2 text-base text-slate-700 leading-tight">Premium Plan with Enhanced Security and Unlimited Access.</p> -->
                 <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">1,0000 MMK</span>
+                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿260</span>
 
-                    <span class="text-base font-medium text-slate-500">/mo</span>
+                    <span class="text-base font-medium text-slate-500">/3mo</span>
                 </p>
             </div>
             <div class="pt-6 pb-8 px-6">
@@ -148,9 +148,9 @@
                 <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Shipper</h2> -->
                 <!-- <p class="mt-2 text-base text-slate-700 leading-tight">High-Speed, Unlimited VPN Access with Extra Days.</p> -->
                 <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">18,000 MMK</span>
+                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿500</span>
 
-                    <span class="text-base font-medium text-slate-500">/2mo</span>
+                    <span class="text-base font-medium text-slate-500">/6mo</span>
                 </p>
             </div>
             <div class="pt-6 pb-8 px-6">
