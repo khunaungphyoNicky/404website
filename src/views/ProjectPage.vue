@@ -26,7 +26,7 @@
                 <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Starter</h2> -->
                 <!-- <p class="mt-2 text-base text-slate-700 leading-tight">Free Plan with Ads for Basic VPN Access and Extra Time.</p> -->
                 <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿100</span>
+                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿50</span>
 
                     <span class="text-base font-medium text-slate-500">/mo</span>
                 </p>
@@ -87,7 +87,7 @@
                 <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Superior</h2> -->
                 <!-- <p class="mt-2 text-base text-slate-700 leading-tight">Premium Plan with Enhanced Security and Unlimited Access.</p> -->
                 <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿260</span>
+                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿150</span>
 
                     <span class="text-base font-medium text-slate-500">/3mo</span>
                 </p>
@@ -148,7 +148,7 @@
                 <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Shipper</h2> -->
                 <!-- <p class="mt-2 text-base text-slate-700 leading-tight">High-Speed, Unlimited VPN Access with Extra Days.</p> -->
                 <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿500</span>
+                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿250</span>
 
                     <span class="text-base font-medium text-slate-500">/6mo</span>
                 </p>
