@@ -41,7 +41,6 @@ import HomePage from "./views/HomePage.vue";
 import AboutPage from "./views/AboutPage.vue"; 
 import ContactPage from "./views/ContactPage.vue"; 
 import CopyRight from "./views/CopyRight.vue";
-import ServerMonitorPage from "./views/ServerMonitorPage.vue";
 
 export default {   
   name: 'App',   
@@ -49,8 +48,7 @@ export default {
     HomePage, 
     AboutPage, 
     ContactPage, 
-    CopyRight,
-    ServerMonitorPage
+    CopyRight
   },   
   data() {     
     return {       
