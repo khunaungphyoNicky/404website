@@ -7,8 +7,8 @@
                 </div>
                 <div class="social">
                     <div class="social flex gap-6">
-                        <a href="https://www.facebook.com/profile.php?id=100092328172044"><i class="fa-brands fa-facebook text-white text-3xl hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
-                        <a href="https://t.me/official404vpn"><i class="fa-brands fa-telegram text-white text-3xl hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61574606755793"><i class="fa-brands fa-facebook text-white text-3xl hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61574606755793"><i class="fa-brands fa-telegram text-white text-3xl hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
                     </div>
                 </div>
             </div>

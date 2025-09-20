@@ -14,7 +14,7 @@
     <nav class=" bg-white shadow-md shadow-gray-200 items-center nav-bar h-[80px] py-6 px-12 text-black flex justify-between fixed top-0 w-full z-10">       
       <div class="logo">         
         <a href="#home">           
-          <h1 class=" font-bold text-[22px] opacity-80 cursor-pointer">404 VPN</h1>         
+          <h1 class=" font-bold text-[22px] opacity-80 cursor-pointer">Boost VPN</h1>         
         </a>       
       </div>       
       <div class="menu flex gap-6 font-bold text-[17.6px] opacity-80">         
@@ -29,8 +29,6 @@
     </nav>     
     
     <HomePage id="home" />         
-    <ServerMonitorPage id="servers" />     
-    <AboutPage id="about" />     
     <ContactPage id="contact" />     
     <CopyRight />   
   </div> 
@@ -38,16 +36,12 @@
 
 <script> 
 import HomePage from "./views/HomePage.vue"; 
-import AboutPage from "./views/AboutPage.vue"; 
-import ContactPage from "./views/ContactPage.vue"; 
 import CopyRight from "./views/CopyRight.vue";
 
 export default {   
   name: 'App',   
   components: {     
     HomePage, 
-    AboutPage, 
-    ContactPage, 
     CopyRight
   },   
   data() {     

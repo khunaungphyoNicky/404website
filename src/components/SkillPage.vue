@@ -3,13 +3,13 @@
         <div class="skills flex items-center gap-10 md:mt-20 mt-10 mb-10">
             <div class=" skills-box flex gap-3 items-center">
                 <div @click="download" class="html flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <a href="https://play.google.com/store/apps/details?id=com.flutterxrayservice.v2ray" target="_blank">
-                        <img class=" w-[200px] " src="../assets/playstore.png" alt="">
+                    <a href="https://play.google.com/store/apps/details?id=com.boostvpn.net" target="_blank">
+                        <img class=" w-[200px] " src="../assets/testt.webp" alt="">
                     </a>
                 </div>
                 <ToastMine ref="toast" message="Downloading..." />
                 <div @click="play" class="php flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <a href="https://play.google.com/store/apps/details?id=com.flutterxrayservice.v2ray" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.boostvpn.net" target="_blank">
                         <img class=" w-[200px] " src="../assets/apk-direct-download.png" alt="">
                     </a>
                 </div>
