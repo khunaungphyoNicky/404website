@@ -1,19 +1,18 @@
 <template>
-    <div  class=" flex flex-col items-center">
-        <div class="box mt-14 flex justify-center items-center gap-2 p-4 shadow-xl shadow-gray-200 rounded-2xl bg-white">
-                <div class="image w-[50%]">
-                    <img class=" rounded-xl w-full" src="../assets/ss1.jpg" alt="">
-                </div>
-                <div class="image w-[50%]">
-                    <img class=" rounded-xl w-full" src="../assets/ss2.jpg" alt="">
-                </div>
-            </div>
+  <div class="flex justify-center">
+    <div class="box flex flex-col sm:flex-row gap-4 p-4 md:p-6 rounded-2xl bg-slate-50 border border-slate-100 shadow-card max-w-2xl w-full">
+      <div class="image flex-1">
+        <img class="rounded-xl w-full shadow-md" src="../assets/pp1.jpg" alt="Boost VPN app screenshot 1" />
+      </div>
+      <div class="image flex-1">
+        <img class="rounded-xl w-full shadow-md" src="../assets/pp2.jpg" alt="Boost VPN app screenshot 2" />
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'BoxPage'
-    }
+export default {
+  name: 'BoxPage',
+}
 </script>
-

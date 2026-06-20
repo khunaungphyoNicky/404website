@@ -1,37 +1,48 @@
 <template>
-    <div class="py-[110px] flex items-center bg-white contact-page">
-        <div class="max-w-[950px] flex mx-auto w-full contact-main">
-            <div class="contact">
-                <div class="contact-title">
-                    <h1 class="text-[#147EFB] font-bold text-lg uppercase">contact</h1>
-                    <h1 class=" font-bold text-2xl mt-2 opacity-80">Reach out to our team for support or inquiries. 👇</h1>
-                </div>
-                <div class="contact-info my-10 flex gap-10">
-                    <div class="location flex gap-6 items-center">
-                        <div class="p-5 rounded-full border border-gray-200"><i
-                                class="fa-solid fa-map-location-dot text-[#147EFB] text-3xl opacity-80"></i></div>
-                        <div class="address">
-                            <h1 class="font-bold text-lg opacity-80">Location</h1>
-                            <p class="contact-box">Bangkok, Thailand</p>
-                        </div>
-                    </div>
-                    <div class="location flex gap-6 items-center ">
-                        <div class="p-5 rounded-full border border-gray-200"><i
-                                class="fa-solid fa-envelope text-[#147EFB] text-3xl opacity-80"></i></div>
-                        <div class="address">
-                            <h1 class="font-bold text-lg opacity-80">Mail</h1>
-                            <p class="contact-box">htetnainglinn8800@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="section-padding bg-slate-50">
+    <div class="section-container">
+      <SectionHeader
+        label="Contact"
+        title="Get in Touch"
+        subtitle="Reach out to our team for support, plan activation, or general inquiries."
+        centered
+      />
+
+      <div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div class="contact-card">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-map-location-dot text-brand-500 text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-1">Location</h3>
+            <p class="font-body text-slate-500 contact-box">Bangkok, Thailand</p>
+          </div>
         </div>
+
+
+        <a
+          href="https://web.facebook.com/profile.php?id=61574606755793"
+          target="_blank"
+          class="contact-card group sm:col-span-2"
+        >
+          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-100 transition-colors">
+            <i class="fa-brands fa-facebook text-brand-500 text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-900 mb-1">Facebook</h3>
+            <p class="font-body text-brand-500 contact-box group-hover:underline">Message us on Facebook for quick support</p>
+          </div>
+        </a>
+      </div>
     </div>
+  </section>
 </template>
 
 <script>
+import SectionHeader from '@/components/SectionHeader.vue'
+
 export default {
-    name: 'ContactPage'
+  name: 'ContactPage',
+  components: { SectionHeader },
 }
 </script>
-

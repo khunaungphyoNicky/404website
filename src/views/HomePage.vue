@@ -1,39 +1,86 @@
 <template>
-    <div>
-        <div class=" h-screen w-full flex flex-col home-page">
-            <div class="container mx-auto max-w-[1030px] px-[40px] mt-[60px] w-full">
-                <div class="max-w-[950px] relative flex gap-[6.2rem] justify-center items-center w-full home h-[650px]">
-                    <div class=" max-w-[500px] intro">
-                        <h1 class=" font-bold text-6xl inline opacity-80 hero-title">Privacy Without Limits</h1>
-                        <img class=" w-16 inline mb-8 ml-2 wave"
-                            src="https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="">
-                        <h1 class=" text-lg font-normal opacity-75 hero-content">Boost VPN delivers the perfect balance of high-speed performance and top-tier privacy protection. 📍
-                        </h1>
-                        <!-- <div class="social flex gap-4 mt-7 social">
-                            <a href="https://web.facebook.com/profile.php?id=61574606755793"><i
-                                    class="fa-brands fa-facebook text-3xl opacity-75 hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
-                            <a href="https://web.facebook.com/profile.php?id=61574606755793"><i
-                                    class="fa-brands fa-telegram text-3xl opacity-75 hover:text-[#147EFB] duration-200 ease-in-out"></i></a>
-                        </div> -->
-                    </div>
-                    <div class=" w-[350px] h-[350px] home-img">
-                        <img class=" rounded-full hero_image " src="../assets/maintest.png" alt="">
-                    </div>
-                    <div class="home-skills absolute bottom-0 left-0">
-                        <SkillPage />
-                    </div>
-                </div>
+  <section class="relative min-h-screen flex items-center pt-[72px] overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-slate-50"></div>
+    <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-brand-500/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-500/5 rounded-full blur-3xl"></div>
+
+    <div class="section-container relative z-10 py-16 md:py-24 px-6">
+      <div class="hero-grid flex items-center gap-12 lg:gap-20">
+        <!-- Text -->
+        <div class="flex-1 max-w-xl">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-sm font-medium mb-6">
+            <i class="fa-solid fa-bolt text-xs"></i>
+            Fast &amp; Secure VPN
+          </div>
+
+          <h1 class="font-bold text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-tight hero-title">
+            Privacy Without
+            <span class="text-brand-500"> Limits</span>
+          </h1>
+
+          <p class="font-body text-slate-500 text-lg mt-6 leading-relaxed hero-content">
+            Boost VPN delivers high-speed performance and top-tier privacy protection.
+            Browse freely with encrypted connections and global server access.
+          </p>
+
+          <div class="hero-ctas flex flex-wrap gap-4 mt-8">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.boostvpn.net"
+              target="_blank"
+              class="btn-primary"
+            >
+              <i class="fa-brands fa-google-play text-lg"></i>
+              Get on Google Play
+            </a>
+            <a href="#servers" class="btn-outline">
+              View Plans
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <div class="trust-badges flex flex-wrap gap-6 mt-10 pt-8 border-t border-slate-200">
+            <div v-for="badge in trustBadges" :key="badge.label" class="flex items-center gap-2 text-sm text-slate-600">
+              <i :class="['fa-solid', badge.icon, 'text-brand-500']"></i>
+              <span>{{ badge.label }}</span>
             </div>
+          </div>
         </div>
+
+        <!-- App image -->
+        <div class="flex-shrink-0 flex flex-col items-center gap-8">
+          <div class="relative">
+            <div class="absolute inset-0 bg-brand-500/10 rounded-full blur-2xl scale-110"></div>
+            <div class="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[360px] lg:h-[360px] home-img">
+              <img
+                class="w-full h-full object-cover rounded-full hero_image shadow-2xl shadow-brand-500/20 ring-4 ring-white"
+                src="../assets/maintest.png"
+                alt="Boost VPN app"
+              />
+            </div>
+          </div>
+
+          <SkillPage />
+        </div>
+      </div>
     </div>
+  </section>
 </template>
 
 <script>
 import SkillPage from '@/components/SkillPage.vue'
+
 export default {
-    name: 'HomePage',
-    components: {
-        SkillPage
-    },
+  name: 'HomePage',
+  components: { SkillPage },
+  data() {
+    return {
+      trustBadges: [
+        { icon: 'fa-shield-halved', label: 'Military-grade encryption' },
+        { icon: 'fa-gauge-high', label: 'Unlimited bandwidth' },
+        { icon: 'fa-globe', label: 'Global servers' },
+      ],
+    }
+  },
 }
 </script>

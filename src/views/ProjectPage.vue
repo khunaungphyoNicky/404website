@@ -1,229 +1,101 @@
 <template>
-    <div>
-        <div class="py-[110px] flex items-center bg-white contact-page">
-        <div class="max-w-[950px] flex mx-auto w-full contact-main">
-            <div class="contact">
-                <div class="contact-title">
-                    <h1 class="text-[#147EFB] font-bold text-lg uppercase">Payment Method</h1>
-                    <h1 class=" font-bold text-2xl mt-2 opacity-80">Pay Easily with Thai Bank</h1>
-                </div>
-                <div class="payment-info my-10 flex gap-3">
-                    <div class="location flex gap-6 items-center">
-                        <img class=" w-[260px] " src="../assets/bank.jpg" alt="">
-                    </div>
-                    <!-- <div class="location flex gap-6 items-center ">
-                        <img class=" w-[40px] " src="../assets/kpay.png" alt="">
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="sm:flex sm:flex-col sm:align-center p-10">
-    <div
-        class="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
-        <div class="border bg-white border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-            <div class="p-6">
-                <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Starter</h2> -->
-                <!-- <p class="mt-2 text-base text-slate-700 leading-tight">Free Plan with Ads for Basic VPN Access and Extra Time.</p> -->
-                <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿50</span>
+  <div>
+    <!-- Pricing -->
+    <section class="section-padding bg-white">
+      <div class="section-container">
+        <SectionHeader
+          label="Pricing"
+          title="Choose Your Plan"
+          subtitle="Simple, transparent pricing. All plans include full server access and no ads."
+          centered
+        />
 
-                    <span class="text-base font-medium text-slate-500">/mo</span>
-                </p>
-            </div>
-            <div class="pt-6 pb-8 px-6">
-                <h3 class="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
-                <ul role="list" class="mt-4 space-y-3">
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No Ads</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No need to add time</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Access to all servers</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Unlimited Bandwidth</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Reduced Battery Consumption</span>
-                    </li>
-                </ul>
-            </div>
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8 items-start pt-4">
+          <PricingCard
+            v-for="plan in plans"
+            :key="plan.name"
+            v-bind="plan"
+          />
         </div>
-        <div class="border bg-white border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-            <div class="p-6">
-                <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Superior</h2> -->
-                <!-- <p class="mt-2 text-base text-slate-700 leading-tight">Premium Plan with Enhanced Security and Unlimited Access.</p> -->
-                <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿150</span>
+      </div>
+    </section>
 
-                    <span class="text-base font-medium text-slate-500">/3mo</span>
-                </p>
-            </div>
-            <div class="pt-6 pb-8 px-6">
-                <h3 class="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
-                <ul role="list" class="mt-4 space-y-3">
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No Ads</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No need to add time</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Access to all servers</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Unlimited Bandwidth</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Reduced Battery Consumption</span>
-                    </li>
-                </ul>
-            </div>
+    <!-- Payment -->
+    <section class="section-padding bg-slate-50">
+      <div class="section-container">
+        <SectionHeader
+          label="Payment"
+          title="Pay Easily with Thai Bank"
+          subtitle="Transfer to our bank account and send us your receipt to activate your plan."
+        />
+        <div class="flex justify-center md:justify-start">
+          <div class="rounded-2xl overflow-hidden shadow-card border border-slate-100 bg-white p-2">
+            <img class="w-full max-w-[280px] rounded-xl" src="../assets/bank.jpg" alt="Thai bank payment details" />
+          </div>
         </div>
-        <div class="border bg-white border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-            <div class="p-6">
-                <!-- <h2 class="text-xl leading-6 font-bold text-slate-900">Shipper</h2> -->
-                <!-- <p class="mt-2 text-base text-slate-700 leading-tight">High-Speed, Unlimited VPN Access with Extra Days.</p> -->
-                <p class="mt-8">
-                    <span class="text-4xl font-bold text-slate-900 tracking-tighter">฿250</span>
+      </div>
+    </section>
 
-                    <span class="text-base font-medium text-slate-500">/6mo</span>
-                </p>
-            </div>
-            <div class="pt-6 pb-8 px-6">
-                <h3 class="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
-                <ul role="list" class="mt-4 space-y-3">
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No Ads</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">No need to add time</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Access to all servers</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Unlimited Bandwidth</span>
-                    </li>
-                    <li class="flex space-x-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-5 w-5 text-green-400" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                        </svg>
-                        <span class="text-base text-slate-700">Reduced Battery Consumption</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-        <div class="max-w-[950px] w-full mx-auto py-[150px] h-auto">
-            <div class="box-title">
-                <h1 class=" uppercase font-bold text-lg text-[#147EFB]">App Interface</h1>
-                <h1 class=" font-bold text-[27px] opacity-80 mt-2">Streamlined design for quick and easy interactions. 🧩</h1>
-            </div>
-            <div class="box-parent">
-                <BoxPage />
-            </div>
-        </div>
-    </div>
+    <!-- App screenshots -->
+    <section class="section-padding bg-white">
+      <div class="section-container">
+        <SectionHeader
+          label="App Interface"
+          title="Simple, Clean Design"
+          subtitle="Streamlined interface for quick connections and easy server switching."
+          centered
+        />
+        <BoxPage />
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
+import SectionHeader from '@/components/SectionHeader.vue'
+import PricingCard from '@/components/PricingCard.vue'
 import BoxPage from '@/components/BoxPage.vue'
+
+const FEATURES = [
+  'No Ads',
+  'No need to add time',
+  'Access to all servers',
+  'Unlimited Bandwidth',
+  'Reduced Battery Consumption',
+]
+
 export default {
-    name: 'ProjectPage',
-    components: {
-        BoxPage,
-    },
+  name: 'ProjectPage',
+  components: { SectionHeader, PricingCard, BoxPage },
+  data() {
+    return {
+      plans: [
+        {
+          name: 'Monthly',
+          description: 'Flexible month-to-month access',
+          price: '฿50',
+          period: '/mo',
+          features: FEATURES,
+          featured: false,
+        },
+        {
+          name: 'Quarterly',
+          description: 'Best value for regular users',
+          price: '฿150',
+          period: '/3mo',
+          features: FEATURES,
+          featured: true,
+        },
+        {
+          name: 'Semi-Annual',
+          description: 'Maximum savings for power users',
+          price: '฿250',
+          period: '/6mo',
+          features: FEATURES,
+          featured: false,
+        },
+      ],
+    }
+  },
 }
 </script>
