@@ -1,39 +1,39 @@
 <template>
-    <div>
-        <div class="skills flex items-center gap-10 md:mt-20 mt-10 mb-10">
-            <div class=" skills-box flex gap-3 items-center">
-                <div @click="download" class="html flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <a href="https://play.google.com/store/apps/details?id=com.boostvpn.net" target="_blank">
-                        <img class=" w-[200px] " src="../assets/testt.webp" alt="">
-                    </a>
-                </div>
-                <ToastMine ref="toast" message="Downloading..." />
-                <div @click="play" class="php flex cursor-pointer hover:translate-y-[-5px] duration-200 ease-in">
-                    <a href="https://play.google.com/store/apps/details?id=com.boostvpn.net" target="_blank">
-                        <img class=" w-[200px] " src="../assets/apk-direct-download.png" alt="">
-                    </a>
-                </div>
-                <ToastMine ref="playstore" message="Downloading..." />
-            </div>
-        </div>
-    </div>
+  <div class="download-badges flex gap-4 items-center">
+    <a
+      href="https://play.google.com/store/apps/details?id=com.boostvpn.net"
+      target="_blank"
+      class="hover:-translate-y-1 transition-transform duration-200"
+      @click="showPlayToast"
+    >
+      <img class="w-[180px] sm:w-[200px]" src="../assets/testt.webp" alt="Get it on Google Play" />
+    </a>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.boostvpn.net"
+      target="_blank"
+      class="hover:-translate-y-1 transition-transform duration-200"
+      @click="showApkToast"
+    >
+      <img class="w-[180px] sm:w-[200px]" src="../assets/apk-direct-download.png" alt="Direct APK download" />
+    </a>
+    <ToastMine ref="playToast" message="Opening download..." />
+    <ToastMine ref="apkToast" message="Opening download..." />
+  </div>
 </template>
 
 <script>
 import ToastMine from '@/components/ToastMine.vue'
+
 export default {
-    name: 'SkillPage',
-    components: {
-        ToastMine
+  name: 'SkillPage',
+  components: { ToastMine },
+  methods: {
+    showPlayToast() {
+      this.$refs.playToast.showToast()
     },
-    methods: {
-    download() {
-      this.$refs.toast.showToast(); // Show toast on button click
+    showApkToast() {
+      this.$refs.apkToast.showToast()
     },
-    play() {
-      this.$refs.playstore.showToast(); // Show toast on button click
-    }
-  }
+  },
 }
 </script>
-
