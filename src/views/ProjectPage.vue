@@ -21,7 +21,7 @@
     </section>
 
     <!-- Payment -->
-    <section class="section-padding bg-slate-50">
+    <!-- <section class="section-padding bg-slate-50">
       <div class="section-container">
         <SectionHeader
           label="Payment"
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- App screenshots -->
     <section class="section-padding bg-white">
@@ -73,7 +73,7 @@ export default {
         {
           name: 'Monthly',
           description: 'Flexible month-to-month access',
-          price: '฿50',
+          price: '$3.5',
           period: '/mo',
           features: FEATURES,
           featured: false,
@@ -81,7 +81,7 @@ export default {
         {
           name: 'Quarterly',
           description: 'Best value for regular users',
-          price: '฿150',
+          price: '$10',
           period: '/3mo',
           features: FEATURES,
           featured: true,
@@ -89,7 +89,7 @@ export default {
         {
           name: 'Semi-Annual',
           description: 'Maximum savings for power users',
-          price: '฿250',
+          price: '$18',
           period: '/6mo',
           features: FEATURES,
           featured: false,
